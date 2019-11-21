@@ -1,13 +1,11 @@
-package day2;
+package day3;
 import common.TreeNode;
 
 /**
  * Solution99
  */
 public class Solution99 {
-    public TreeNode sortedArrayToBST(int[] nums) {
+    public void recoverTree(TreeNode root) {
         
-        return 
-    }
-    
+    }    
 }
