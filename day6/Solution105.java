@@ -20,7 +20,8 @@ public class Solution105 {
         return root;
     }
     
-    public TreeNode buildTree(int[] preorder, int preStart, int preEnd, int[] inorder, int inStart, int inEnd, Map<Integer, Integer> inMap) {
+    public TreeNode buildTree(int[] preorder, int preStart, int preEnd, int[] inorder, int inStart, 
+    int inEnd, Map<Integer, Integer> inMap) {
         if(preStart > preEnd || inStart > inEnd) return null;
     
         TreeNode root = new TreeNode(preorder[preStart]);
