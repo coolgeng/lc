@@ -28,4 +28,12 @@ public class Solution746 {
         return Math.min(cost[cost.length-1], cost[cost.length-2]);        
     }
 
+    public int minCostClimbingStairs(int[] cost) {
+        int[] totalCost = new int[cost.length];
+        System.arraycopy(cost, 0, totalCost, 0, cost.length);
+        for (int i=2; i < totalCost.length; i++) {
+            cost[i] += Math.min(totalCost[i-1], totalCost[i-2]);
+        }
+        return Math.min(cost[cost.length - 1], cost[cost.length - 2]);
+    }
 }
