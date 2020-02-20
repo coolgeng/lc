@@ -65,8 +65,8 @@ public class Solution124 {
 
     private int maxPathSumHelper(TreeNode root) {
         if (root == null) return 0;
-        int left = Math.max(maxPathSumHelper(root.left), max);
-        int right = Math.max(maxPathSumHelper(root.right), max);
+        int left = Math.max(maxPathSumHelper(root.left), 0);
+        int right = Math.max(maxPathSumHelper(root.right), 0);
         max = Math.max(max, left+right+root.val);        
         return Math.max(left, right) + root.val;        
     }
