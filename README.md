@@ -1,5 +1,15 @@
-# lc
-# day1 200,104
-# day2 108
-# day3 99
-# day4 301
+
+Ongoing topic:
+    * linkedList
+    * dfs
+    * dp
+    * stack
+    * array    
+    * twoPointer
+
+
+
+
+    
+Completed topic:
+    * linkedList
